@@ -1,0 +1,84 @@
+Q1. Classes vs. Objects:
+
+1) Explain the difference between a class and an object.
+   class def:- class is blueprint of an object. it is a virtual
+   object:- object is a intance of a class real world entity.object is reality
+
+2) Provide an example of a real-world scenario where you would use a class.
+   
+   class tabel:
+
+Q2.Attributes and Methods:
+   1) What are attributes and methods in a class?
+   2) Create a class representing a 'Car' with attributes like 'model' and 'color' and a method like 'start_engine'.
+
+Q3. Inheritance:
+  1) Define inheritance in Python.
+      Inheritance allows us to define a class that inherits all the methods and properties from another class.
+      Parent class is the class being inherited from, also called base class.
+      Child class is the class that inherits from another class, also called derived class.
+   
+  2)Create a base class 'Animal' and a derived class 'Dog' inheriting from it.
+     
+     class animal:
+       def run(self):
+         print("animal run")
+
+    
+       def eat(self):
+         print ("animal eat")
+
+    class dog(animal):
+       def breed(self):
+         print("animal breed is golden retriver")
+
+
+     	dog=dog()
+	dog.breed()
+	dog.run()
+	dog.eat()
+
+Q4.Encapsulation:
+   1)Explain encapsulation.
+    encapsulation means wrapping of data and method into a single unit.
+    set get concept not clear
+    
+   2)How can you achieve encapsulation in Python?
+
+
+Q5. Polymorphism:
+   1) What is polymorphism?
+       Polymorphism in Python allows us to define methods in the child class with the same name as defined in their parent class
+
+   2)Provide an example of polymorphism using method overriding.
+
+    class android:
+      def mi(self):
+        print("this is mitv")
+
+    class tv(android):
+      def sony(self):
+        print("this is sonytv")
+    
+      def mi(self):
+        super().mi()
+        print("this is mi tv")
+
+obj=tv()
+obj.sony()
+obj.mi()
+
+Q6.Initialization and Self:
+   1) What is the purpose of the `__init__` method?
+
+   
+    2)Why is `self` used in Python classes?
+     self is a current object.Whatever current object is present takes self
+
+
+
+
+
+Parent class is the class being inherited from, also called base class.
+
+Child class is the class that inherits from another class, also called derived class.
